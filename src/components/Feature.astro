@@ -4,7 +4,12 @@ const { content, section } = Astro.props;
 const basePath = import.meta.env.VITE_BASE_URL || "";
 ---
 
-<section class={`${section.type !== "hero" ? "py-8 sm:py-12 md:py-16" : ""}`}>
+<section
+  class={`${section.type !== "hero" ? "py-8 sm:py-12 md:py-16" : ""}`}
+  style={section.type !== "hero"
+    ? `background-color: ${section.bgColor}; opacity: ${section.bgOpacity};`
+    : undefined}
+>
   <div
     class={`relative lg:overflow-hidden ${section.sectionType !== "video" ? "py-8 lg:py-16" : ""} ${section?.bottomRounded ? `rounded-b-${section?.bottomRounded}` : ""} 
     ${section?.sectionMarginTopMobile > 0 ? `pt-${section?.sectionMarginTopMobile}` : section?.sectionMarginTopMobile < 0 ? `-mt-${Math.abs(section.sectionMarginTopMobile)}` : ""}
@@ -82,7 +87,7 @@ const basePath = import.meta.env.VITE_BASE_URL || "";
           <span
             class="absolute -z-10 w-full inset-0 top-0 left-0"
             style={`background-color:${section.bgColor}; opacity: ${section.bgOpacity}`}
-          />{" "}
+          />
         </>
       ) : null
     }

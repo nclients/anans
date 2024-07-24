@@ -26,14 +26,14 @@ header:
 sections:
 # Hero
   - type: "hero" 
-    height: "75" # percent of the viewport height
+    height: "80" # percent of the viewport height
     sectionType: "imgBg" # video | imgWithText | imgBg
     bgVideoType: "" # youtube | vimeo | GJW
     bgVideoId: ""
     bgImg: "/gallery/日本叉燒拉麵 Japanese BBQ Pork Ramen.webp"
     bgImgAlt: "AnAn's Deli Kitchen 安安麵食 - Best Food Today"
-    bgColor: "#000"
-    bgOpacity: "0.5" # 0~1
+    bgColor: "#000000"
+    bgOpacity: "0.65" # 0~1
     title: "AnAn's Deli Kitchen 安安麵食 - Best Food Today"
     titleColor: "#ffffff"
     description: "Chinese and noodles"
