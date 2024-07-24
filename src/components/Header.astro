@@ -60,8 +60,8 @@ const basePath = import.meta.env.VITE_BASE_URL || "";
     class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
     aria-label="Global"
   >
-    <div class="cursor-pointer flex lg:flex-1 truncate">
-      <a href="/" class="flex items-center -m-1.5 p-1.5">
+    <div class="cursor-pointer truncate">
+      <a href="/" class="flex items-center justify-center -m-1.5 p-1.5">
         <span class="sr-only">{content.header.title + "Logo"}</span>
         <img
           class={`hidden sm:block h-24 w-auto mr-3`}
@@ -87,7 +87,7 @@ const basePath = import.meta.env.VITE_BASE_URL || "";
       </a>
     </div>
     <div
-      class=`cursor-pointer hidden lg:flex lg:gap-x-12`
+      class=`cursor-pointer hidden lg:flex lg:flex-0 lg:gap-x-12 grow justify-center`
       style={`color:${content?.header.menuTextColor}`}
     >
       {
